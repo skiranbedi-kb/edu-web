@@ -45,11 +45,12 @@
             text-decoration: none;
         }
 
-
+        /* HERO SECTION */
         .hero {
             display: flex;
             align-items: center;
             padding: 50px 60px;
+            gap: 30px;
         }
 
         .hero-text {
@@ -66,19 +67,22 @@
         }
 
         .hero img {
-            width: 420px;
+            width: 450px;
+            border-radius: 12px;
         }
 
         .hero-text .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
             border-radius: 34px;
-            color: #e4eeea;
-            height: 200 px;
-            width: 220 px;
-            padding: 10px;
             background-color: #2ca66f;
+            color: #fff;
             text-decoration: none;
+            font-weight: 500;
         }
 
+        /* COURSES SECTION */
         .courses-section {
             padding: 40px 60px;
         }
@@ -104,6 +108,8 @@
         .course img {
             width: 100%;
             border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
         }
 
         .course h4 {
@@ -123,6 +129,36 @@
             padding: 30px;
             background: #fff;
             margin-top: 40px;
+        }
+
+        /* ✅ MOBILE RESPONSIVE STYLING */
+        @media (max-width: 850px) {
+            header {
+                padding: 15px 25px;
+            }
+
+            header nav {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .hero img {
+                width: 80%;
+                max-width: 320px;
+            }
+
+            .hero-text h1 {
+                font-size: 28px;
+            }
+
+            .courses-section {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
